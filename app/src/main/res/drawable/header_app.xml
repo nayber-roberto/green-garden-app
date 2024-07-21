@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/> <!-- Color de fondo del view -->
+
+    <gradient
+        android:startColor="#264325 "
+        android:endColor="#264325"
+        android:angle="90" />
+
+    <corners
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="0dp"/>
+</shape>
