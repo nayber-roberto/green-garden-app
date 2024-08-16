@@ -6,6 +6,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:listDivider">@drawable/custom_divider</item>
+
     </style>
 
     <!-- PopupOverlay theme for Toolbar's popup menu -->

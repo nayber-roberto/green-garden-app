@@ -58,6 +58,26 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.122" />
 
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="261dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_light"
+            android:padding="16dp"
+            android:text="Date"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="1.0" />
+
         <View
             android:id="@+id/view"
             android:layout_width="100dp"
@@ -124,7 +144,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
-            android:text="DOM"
+            android:text="DAY1"
             android:textAlignment="center"
             android:textColor="#264325"
             android:textSize="12sp"
@@ -140,7 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
-            android:text="LUN"
+            android:text="DAY2"
             android:textAlignment="center"
             android:textColor="#264325"
             android:textSize="12sp"
@@ -156,7 +176,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
-            android:text="MAR"
+            android:text="DAY3"
             android:textAlignment="center"
             android:textColor="#264325"
             android:textSize="12sp"
@@ -334,7 +354,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
-            android:text="Dom"
+            android:text="Mar"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="@+id/view"
@@ -344,7 +364,7 @@
             app:layout_constraintVertical_bias="0.215" />
 
         <TextView
-            android:id="@+id/textViewConsejos"
+            android:id="@+id/textViewTip"
             android:layout_width="239dp"
             android:layout_height="74dp"
             android:fontFamily="@font/lovedbytheking_regular"
@@ -372,10 +392,12 @@
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:layout_constraintVertical_bias="0.973" />
 
-        <ImageView
-            android:id="@+id/imageView11"
+        <ImageButton
+            android:id="@+id/btnFooterHome"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="@+id/footer"
             app:layout_constraintEnd_toEndOf="@+id/footer"
             app:layout_constraintHorizontal_bias="0.114"
@@ -383,34 +405,40 @@
             app:layout_constraintTop_toTopOf="@+id/footer"
             app:srcCompat="@drawable/ic_inicio" />
 
-        <ImageView
-            android:id="@+id/imageView12"
+        <ImageButton
+            android:id="@+id/btnFooterJardin"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginEnd="72dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="@+id/footer"
-            app:layout_constraintEnd_toStartOf="@+id/imageView13"
+            app:layout_constraintEnd_toStartOf="@+id/btnFooterRecursos"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/footer"
             app:layout_constraintTop_toTopOf="@+id/footer"
             app:srcCompat="@drawable/ic_mi_jardin" />
 
-        <ImageView
-            android:id="@+id/imageView13"
+        <ImageButton
+            android:id="@+id/btnFooterRecursos"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginEnd="52dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="@+id/footer"
-            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintEnd_toStartOf="@+id/btnFooterActividades"
             app:layout_constraintHorizontal_bias="0.995"
             app:layout_constraintStart_toStartOf="@+id/footer"
             app:layout_constraintTop_toTopOf="@+id/footer"
             app:srcCompat="@drawable/ic_recursos" />
 
-        <ImageView
-            android:id="@+id/imageView14"
+        <ImageButton
+            android:id="@+id/btnFooterActividades"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="@+id/footer"
             app:layout_constraintEnd_toEndOf="@+id/footer"
             app:layout_constraintHorizontal_bias="0.888"

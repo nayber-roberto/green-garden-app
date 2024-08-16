@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayDataActivity">
+
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="23dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/myTableLayout"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/button_back" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:padding="16dp"
+        android:text="Consumo de Recursos"
+        android:textAlignment="center"
+        android:textColor="#264325"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/myTableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <TableLayout
+        android:id="@+id/myTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#264325"
+        android:backgroundTint="#264325"
+        android:padding="16dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225">
+
+        <TableRow>
+
+            <TextView
+                android:background="#264325"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Mes"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="#264325"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Servicio"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="#264325"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Consumo"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="#264325"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Precio"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#264325"
+        android:fontFamily="@font/poppins_semibold"
+        android:padding="16dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="Borrar Datos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myTableLayout"
+        app:layout_constraintVertical_bias="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

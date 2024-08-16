@@ -11,7 +11,7 @@ import android.os.Handler;
 public class SplashActivity extends AppCompatActivity {
 
     //Se genera una constante para establecer un tiempo de agotamiento de 5 segundos.
-    private static final int SPLASH_TIMEOUT = 4000;
+    private static final int SPLASH_TIMEOUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

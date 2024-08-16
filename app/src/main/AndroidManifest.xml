@@ -12,7 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GreenGarden"
         tools:targetApi="31">
-
+        <activity
+            android:name=".MiJardinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActividadesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElectricityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProveedoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsoDeRecursosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -22,17 +45,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
-
     </application>
-
 
 </manifest>

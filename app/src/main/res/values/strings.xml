@@ -3,4 +3,15 @@
     <string name="image_description_start_splash">Fondo de inicio de la APP GreenGarden</string>
     <string name="navigation_drawer_open">Abrir menú de navegación</string>
     <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+    <string name="water_button">Agua</string>
+    <string name="electricity_button">Electricidad</string>
+    <string name="statistics_button">Estadística</string>
+
+    <string-array name="recursos_array">
+        <item>Agua</item>
+        <item>Energía</item>
+        <item>Fertilizante</item>
+        <item>Pesticida</item>
+
+    </string-array>
 </resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsoDeRecursosActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Código existente (sin cambios) -->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/header_app"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarIconColor"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.571"
+            app:srcCompat="@drawable/campana" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="261dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_light"
+            android:padding="16dp"
+            android:text="Date"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView_UsoDeRecursos"
+            android:layout_width="237dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="USO DE RECURSOS"
+            android:textAlignment="center"
+            android:textColor="#264325"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.12" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_divider"
+            app:layout_constraintBottom_toTopOf="@+id/textViewIngresarCostos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_UsoDeRecursos"
+            app:layout_constraintVertical_bias="0.192" />
+
+        <TextView
+            android:id="@+id/textViewIngresarCostos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="INGRESAR COSTOS"
+            android:textAlignment="center"
+            android:textColor="#264325"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_UsoDeRecursos"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="90dp"
+            android:layout_height="2dp"
+            android:background="@drawable/custom_divider"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_UsoDeRecursos"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="90dp"
+            android:layout_height="2dp"
+            android:background="@drawable/custom_divider"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_UsoDeRecursos"
+            app:layout_constraintVertical_bias="0.097" />
+
+        <View
+            android:id="@+id/footer"
+            android:layout_width="379dp"
+            android:layout_height="54dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#264325"
+            android:backgroundTintMode="add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.973" />
+
+        <ImageButton
+            android:id="@+id/btnFooterHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/footer"
+            app:layout_constraintEnd_toEndOf="@id/footer"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="@id/footer"
+            app:layout_constraintTop_toTopOf="@id/footer"
+            app:srcCompat="@drawable/ic_inicio"/>
+
+        <ImageButton
+            android:id="@+id/btnFooterJardin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="72dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/footer"
+            app:layout_constraintEnd_toStartOf="@id/btnFooterRecursos"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/footer"
+            app:layout_constraintTop_toTopOf="@id/footer"
+            app:srcCompat="@drawable/ic_mi_jardin"/>
+
+        <ImageButton
+            android:id="@+id/btnFooterRecursos"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="52dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/footer"
+            app:layout_constraintEnd_toStartOf="@id/btnFooterActividades"
+            app:layout_constraintHorizontal_bias="0.995"
+            app:layout_constraintStart_toStartOf="@id/footer"
+            app:layout_constraintTop_toTopOf="@id/footer"
+            app:srcCompat="@drawable/ic_recursos"/>
+
+        <ImageButton
+            android:id="@+id/btnFooterActividades"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/footer"
+            app:layout_constraintEnd_toEndOf="@id/footer"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="@id/footer"
+            app:layout_constraintTop_toTopOf="@id/footer"
+            app:srcCompat="@drawable/ic_actividades"/>
+
+        <!-- Nuevos widgets agregados al final -->
+
+        <!-- Spinner para selección de recurso -->
+
+        <!-- Input para consumo de recurso -->
+
+        <!-- Input para costo por litro -->
+
+        <!-- Button para registrar costos -->
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="23dp"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toStartOf="@+id/textView_UsoDeRecursos"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.298"
+            app:srcCompat="@drawable/button_back" />
+
+        <ImageButton
+            android:id="@+id/btnEnergia"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/btnVerEstadisticas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toEndOf="@+id/btnAgua"
+            app:layout_constraintTop_toBottomOf="@+id/divider4"
+            app:layout_constraintVertical_bias="0.528"
+            app:srcCompat="@drawable/energia_icono" />
+
+        <ImageButton
+            android:id="@+id/btnAgua"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/btnVerEstadisticas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.261"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3"
+            app:layout_constraintVertical_bias="0.527"
+            app:srcCompat="@drawable/agua_icono_recursos" />
+
+        <Button
+            android:id="@+id/btnVerEstadisticas"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#264325"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Ver Estadísticas"
+            android:textColorHighlight="#264325"
+            android:textColorLink="#264325"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIngresarCostos"
+            app:layout_constraintVertical_bias="0.368" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/nav_header" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
